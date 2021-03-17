@@ -87,12 +87,14 @@
         "connected_node": [
             "A0",
             "A8",
-            "A5"
+            "A5",
+            "B4"
         ],
         "direction": {
             "A0": "backward",
             "A8": "forward",
-            "A5": "left"
+            "A5": "left",
+            "B4": "down"
         },
         "type": [
             "lift_table"
@@ -109,13 +111,15 @@
             "A4",
             "A1",
             "A6",
-            "A9"
+            "A9",
+            "B5"
         ],
         "direction": {
             "A4": "right",
             "A1": "backward",
             "A6": "left",
-            "A9": "forward"
+            "A9": "forward",
+            "B5": "down"
         },
         "type": [
             "lift_table",
@@ -133,13 +137,15 @@
             "A2",
             "A5",
             "A7",
-            "A10"
+            "A10",
+            "B6"
         ],
         "direction": {
             "A2": "backward",
             "A5": "right",
             "A7": "left",
-            "A10": "forward"
+            "A10": "forward",
+            "B6": "down"
         },
         "type": [
             "lift_table"
@@ -155,12 +161,14 @@
         "connected_node": [
             "A3",
             "A6",
-            "A11"
+            "A11",
+            "B7"
         ],
         "direction": {
             "A3": "backward",
             "A6": "right",
-            "A11": "forward"
+            "A11": "forward",
+            "B7": "down"
         },
         "type": [
             "lift_table",
@@ -700,11 +708,13 @@
         ],
         "connected_node": [
             "A28",
-            "A33"
+            "A33",
+            "B32"
         ],
         "direction": {
             "A28": "backward",
-            "A33": "left"
+            "A33": "left",
+            "B32": "down"
         },
         "type": [
             "lift_table",
@@ -721,12 +731,14 @@
         "connected_node": [
             "A29",
             "A32",
-            "A34"
+            "A34",
+            "B33"
         ],
         "direction": {
             "A29": "backward",
             "A32": "right",
-            "A34": "left"
+            "A34": "left",
+            "B33": "down"
         },
         "type": [
             "lift_table",
@@ -743,12 +755,14 @@
         "connected_node": [
             "A33",
             "A30",
-            "A35"
+            "A35",
+            "B34"
         ],
         "direction": {
             "A33": "right",
             "A30": "backward",
-            "A35": "left"
+            "A35": "left",
+            "B34": "down"
         },
         "type": [
             "lift_table",
@@ -764,15 +778,801 @@
         ],
         "connected_node": [
             "A34",
-            "A31"
+            "A31",
+            "B35"
         ],
         "direction": {
             "A34": "right",
-            "A31": "backward"
+            "A31": "backward",
+            "B35": "down"
         },
         "type": [
             "lift_table",
             "small_cap_separator"
+        ]
+    },
+    "B0": {
+        "rf_id": "2D00549ED037",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "connected_node": [
+            "B1",
+            "B4"
+        ],
+        "direction": {
+            "B1": "left",
+            "B4": "forward"
+        },
+        "type": [
+            "charging_station"
+        ]
+    },
+    "B1": {
+        "rf_id": "2D00552390CB",
+        "pos": [
+            0,
+            0,
+            1
+        ],
+        "connected_node": [
+            "B0",
+            "B5"
+        ],
+        "direction": {
+            "B0": "right",
+            "B5": "forward"
+        },
+        "type": [
+            "charging_station"
+        ]
+    },
+    "B2": {
+        "rf_id": "2C00D2BF2F6E",
+        "pos": [
+            0,
+            0,
+            2
+        ],
+        "connected_node": [
+            "B3",
+            "B6"
+        ],
+        "direction": {
+            "B3": "left",
+            "B6": "forward"
+        },
+        "type": [
+            "charging_station"
+        ]
+    },
+    "B3": {
+        "rf_id": "2C00D2F7444D",
+        "pos": [
+            0,
+            0,
+            3
+        ],
+        "connected_node": [
+            "B2",
+            "B7"
+        ],
+        "direction": {
+            "B2": "right",
+            "B7": "forward"
+        },
+        "type": [
+            "charging_station"
+        ]
+    },
+    "B4": {
+        "rf_id": "2D00537ED4D4",
+        "pos": [
+            0,
+            1,
+            0
+        ],
+        "connected_node": [
+            "B0",
+            "B8",
+            "B5",
+            "A4"
+        ],
+        "direction": {
+            "B0": "backward",
+            "B8": "forward",
+            "B5": "left",
+            "A4": "up"
+        },
+        "type": [
+            "lift_table"
+        ]
+    },
+    "B5": {
+        "rf_id": "2C00D9850474",
+        "pos": [
+            0,
+            1,
+            1
+        ],
+        "connected_node": [
+            "B4",
+            "B1",
+            "B6",
+            "B9",
+            "A5"
+        ],
+        "direction": {
+            "B4": "right",
+            "B1": "backward",
+            "B6": "left",
+            "B9": "forward",
+            "A5": "up"
+        },
+        "type": [
+            "lift_table"
+        ]
+    },
+    "B6": {
+        "rf_id": "2C00DB12A346",
+        "pos": [
+            0,
+            1,
+            2
+        ],
+        "connected_node": [
+            "B2",
+            "B5",
+            "B7",
+            "B10",
+            "A6"
+        ],
+        "direction": {
+            "B2": "backward",
+            "B5": "right",
+            "B7": "left",
+            "B10": "forward",
+            "A6": "up"
+        },
+        "type": [
+            "lift_table"
+        ]
+    },
+    "B7": {
+        "rf_id": "2C00D99E96FD",
+        "pos": [
+            0,
+            1,
+            3
+        ],
+        "connected_node": [
+            "B3",
+            "B6",
+            "B11",
+            "A7"
+        ],
+        "direction": {
+            "B3": "backward",
+            "B6": "right",
+            "B11": "forward",
+            "A7": "up"
+        },
+        "type": [
+            "lift_table"
+        ]
+    },
+    "B8": {
+        "rf_id": "2D0054F13BB3",
+        "pos": [
+            0,
+            2,
+            0
+        ],
+        "connected_node": [
+            "B12",
+            "B9",
+            "B4"
+        ],
+        "direction": {
+            "B12": "forward",
+            "B9": "left",
+            "B4": "backward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B9": {
+        "rf_id": "2D005489DD2D",
+        "pos": [
+            0,
+            2,
+            1
+        ],
+        "connected_node": [
+            "B13",
+            "B8",
+            "B10",
+            "B5"
+        ],
+        "direction": {
+            "B13": "forward",
+            "B8": "right",
+            "B10": "left",
+            "B5": "backward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B10": {
+        "rf_id": "2C00D9C08ABF",
+        "pos": [
+            0,
+            2,
+            2
+        ],
+        "connected_node": [
+            "B9",
+            "B11",
+            "B14",
+            "B6"
+        ],
+        "direction": {
+            "B9": "right",
+            "B11": "left",
+            "B14": "forward",
+            "B6": "backward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B11": {
+        "rf_id": "2D00539BE306",
+        "pos": [
+            0,
+            2,
+            3
+        ],
+        "connected_node": [
+            "B10",
+            "B15",
+            "B7"
+        ],
+        "direction": {
+            "B10": "right",
+            "B15": "forward",
+            "B7": "backward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B12": {
+        "rf_id": "2C00D87D038A",
+        "pos": [
+            0,
+            3,
+            0
+        ],
+        "connected_node": [
+            "B8",
+            "B13",
+            "B16"
+        ],
+        "direction": {
+            "B8": "backward",
+            "B13": "left",
+            "B16": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B13": {
+        "rf_id": "2C00D8694AD7",
+        "pos": [
+            0,
+            3,
+            1
+        ],
+        "connected_node": [
+            "B12",
+            "B9",
+            "B14",
+            "B17"
+        ],
+        "direction": {
+            "B12": "right",
+            "B9": "backward",
+            "B14": "left",
+            "B17": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B14": {
+        "rf_id": "2D0054B369A3",
+        "pos": [
+            0,
+            3,
+            2
+        ],
+        "connected_node": [
+            "B13",
+            "B10",
+            "B15",
+            "B18"
+        ],
+        "direction": {
+            "B13": "right",
+            "B10": "backward",
+            "B15": "left",
+            "B18": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B15": {
+        "rf_id": "2C00D20E48B8",
+        "pos": [
+            0,
+            3,
+            3
+        ],
+        "connected_node": [
+            "B11",
+            "B14",
+            "B19"
+        ],
+        "direction": {
+            "B11": "backward",
+            "B14": "right",
+            "B19": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B16": {
+        "rf_id": "2C00D208CC3A",
+        "pos": [
+            0,
+            4,
+            0
+        ],
+        "connected_node": [
+            "B12",
+            "B17",
+            "B20"
+        ],
+        "direction": {
+            "B12": "backward",
+            "B17": "left",
+            "B20": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B17": {
+        "rf_id": "2C00DA0AE11D",
+        "pos": [
+            0,
+            4,
+            1
+        ],
+        "connected_node": [
+            "B16",
+            "B13",
+            "B18",
+            "B21"
+        ],
+        "direction": {
+            "B16": "right",
+            "B13": "backward",
+            "B18": "left",
+            "B21": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B18": {
+        "rf_id": "2D0054985ABB",
+        "pos": [
+            0,
+            4,
+            2
+        ],
+        "connected_node": [
+            "B17",
+            "B14",
+            "B19",
+            "B22"
+        ],
+        "direction": {
+            "B17": "right",
+            "B14": "backward",
+            "B19": "left",
+            "B22": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B19": {
+        "rf_id": "2C00D219E106",
+        "pos": [
+            0,
+            4,
+            3
+        ],
+        "connected_node": [
+            "B18",
+            "B15",
+            "B23"
+        ],
+        "direction": {
+            "B18": "right",
+            "B15": "backward",
+            "B23": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B20": {
+        "rf_id": "2C00D886C5B7",
+        "pos": [
+            0,
+            5,
+            0
+        ],
+        "connected_node": [
+            "B16",
+            "B21",
+            "B24"
+        ],
+        "direction": {
+            "B16": "backward",
+            "B21": "left",
+            "B24": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B21": {
+        "rf_id": "2D00545FE8CE",
+        "pos": [
+            0,
+            5,
+            1
+        ],
+        "connected_node": [
+            "B20",
+            "B17",
+            "B22",
+            "B25"
+        ],
+        "direction": {
+            "B20": "right",
+            "B17": "backward",
+            "B22": "left",
+            "B25": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B22": {
+        "rf_id": "2D0053162F47",
+        "pos": [
+            0,
+            5,
+            2
+        ],
+        "connected_node": [
+            "B21",
+            "B18",
+            "B23",
+            "B26"
+        ],
+        "direction": {
+            "B21": "right",
+            "B18": "backward",
+            "B23": "left",
+            "B26": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B23": {
+        "rf_id": "2C00DB0FE810",
+        "pos": [
+            0,
+            5,
+            3
+        ],
+        "connected_node": [
+            "B22",
+            "B19",
+            "B27"
+        ],
+        "direction": {
+            "B22": "right",
+            "B19": "backward",
+            "B27": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B24": {
+        "rf_id": "2D00555F1A3D",
+        "pos": [
+            0,
+            6,
+            0
+        ],
+        "connected_node": [
+            "B20",
+            "B25",
+            "B32"
+        ],
+        "direction": {
+            "B20": "backward",
+            "B25": "left",
+            "B32": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B25": {
+        "rf_id": "2C00D2C21824",
+        "pos": [
+            0,
+            6,
+            1
+        ],
+        "connected_node": [
+            "B24",
+            "B21",
+            "B26",
+            "B33"
+        ],
+        "direction": {
+            "B24": "right",
+            "B21": "backward",
+            "B26": "left",
+            "B33": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B26": {
+        "rf_id": "2C00DA3723E2",
+        "pos": [
+            0,
+            6,
+            2
+        ],
+        "connected_node": [
+            "B27",
+            "B25",
+            "B22",
+            "B34"
+        ],
+        "direction": {
+            "B27": "left",
+            "B25": "right",
+            "B22": "backward",
+            "B34": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B27": {
+        "rf_id": "2D00536C3D2F",
+        "pos": [
+            0,
+            6,
+            3
+        ],
+        "connected_node": [
+            "B26",
+            "B23",
+            "B35"
+        ],
+        "direction": {
+            "B26": "right",
+            "B23": "backward",
+            "B35": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B28": {
+        "rf_id": null,
+        "pos": [
+            0,
+            7,
+            0
+        ],
+        "connected_node": [
+            "B24",
+            "B29",
+            "B32"
+        ],
+        "direction": {
+            "B24": "backward",
+            "B29": "left",
+            "B32": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B29": {
+        "rf_id": 29,
+        "pos": [
+            0,
+            7,
+            1
+        ],
+        "connected_node": [
+            "B28",
+            "B30",
+            "B25",
+            "B33"
+        ],
+        "direction": {
+            "B28": "right",
+            "B30": "left",
+            "B25": "backward",
+            "B33": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B30": {
+        "rf_id": 30,
+        "pos": [
+            0,
+            7,
+            2
+        ],
+        "connected_node": [
+            "B26",
+            "B34",
+            "B29"
+        ],
+        "direction": {
+            "B26": "backward",
+            "B34": "forward",
+            "B29": "right"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B31": {
+        "rf_id": 31,
+        "pos": [
+            0,
+            7,
+            3
+        ],
+        "connected_node": [
+            "B27",
+            "B35"
+        ],
+        "direction": {
+            "B27": "backward",
+            "B35": "forward"
+        },
+        "type": [
+            "node"
+        ]
+    },
+    "B32": {
+        "rf_id": "2C00D995EC8C",
+        "pos": [
+            0,
+            8,
+            0
+        ],
+        "connected_node": [
+            "B24",
+            "B33",
+            "A32"
+        ],
+        "direction": {
+            "B24": "backward",
+            "B33": "left",
+            "A32": "up"
+        },
+        "type": [
+            "lift_table"
+        ]
+    },
+    "B33": {
+        "rf_id": "2D0054A967B7",
+        "pos": [
+            0,
+            8,
+            1
+        ],
+        "connected_node": [
+            "B25",
+            "B32",
+            "B34",
+            "A33"
+        ],
+        "direction": {
+            "B25": "backward",
+            "B32": "right",
+            "B34": "left",
+            "A33": "up"
+        },
+        "type": [
+            "lift_table"
+        ]
+    },
+    "B34": {
+        "rf_id": "2D0053DD8E2D",
+        "pos": [
+            0,
+            8,
+            2
+        ],
+        "connected_node": [
+            "B33",
+            "B26",
+            "B35",
+            "A34"
+        ],
+        "direction": {
+            "B33": "right",
+            "B26": "backward",
+            "B35": "left",
+            "A34": "up"
+        },
+        "type": [
+            "lift_table"
+        ]
+    },
+    "B35": {
+        "rf_id": "2C00D99AA9C6",
+        "pos": [
+            0,
+            8,
+            3
+        ],
+        "connected_node": [
+            "B34",
+            "B27",
+            "A35"
+        ],
+        "direction": {
+            "B34": "right",
+            "B27": "backward",
+            "A35": "up"
+        },
+        "type": [
+            "lift_table"
         ]
     }
 }
