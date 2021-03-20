@@ -158,6 +158,10 @@ class Planner(Singleton):
                 self.logger.info(f'added relation {node} - {direction} - {adjacent_node}')
         self.logger.info(f'setup nodes complete')
 
+    def get_node(self, node=None):
+        assert node is not None
+        return self.node_object_map[node]
+
     def block_node(self, node, agent):
         self.block_node_lock.acquire()
         try:
