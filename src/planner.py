@@ -190,7 +190,8 @@ class Planner(Singleton):
         if agent not in self.agents:
             self.agents.append(agent)
             self.agent_position_map[agent.id] = agent.current_position
-            self.block_node(node=agent.current_position, agent_id=agent.id)
+            # self.block_node(node=agent.current_position, agent_id=agent.id)
+            self.block_node(node=agent.current_position, agent=agent)
             self.logger.info(f'registered agent: {agent.id} at {agent.current_position}')
         else:
             self.logger.info(f'{agent.id} is already registered')
