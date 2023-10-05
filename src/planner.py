@@ -1,5 +1,6 @@
 from threading import Lock
 
+from algorithms.path_finder import PathFinder
 from data_structures.locked_defaultdict import LockedDefaultDict
 # from collections import defaultdict
 from design_patterns.singleton import Singleton
@@ -12,7 +13,7 @@ MIN_COST = -10000
 
 class Planner(Singleton):
 
-    def __init__(self, path_finder=None):
+    def __init__(self, path_finder: PathFinder = None):
 
         Singleton.__init__(self)
 
