@@ -1,6 +1,5 @@
+from collections import defaultdict
 from typing import List
-
-from data_structures.locked_defaultdict import LockedDefaultDict
 
 
 class Node:
@@ -12,7 +11,7 @@ class Node:
         self.rfid = data['rf_id']
         self._agent = None
         self._blocked = False
-        self.connected_nodes_map = LockedDefaultDict(lambda x: None)
+        self.connected_nodes_map = defaultdict(lambda: None)
         self.connected_nodes: List['Node'] = list()
 
     def __str__(self):
