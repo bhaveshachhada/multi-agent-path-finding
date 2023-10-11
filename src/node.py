@@ -2,7 +2,7 @@ import threading
 import traceback
 from collections import defaultdict
 from functools import wraps
-from typing import List, Callable
+from typing import List, Callable, Dict
 
 
 class Node:
@@ -11,10 +11,9 @@ class Node:
         self.name = name
         self.data = data
         self.position = data['pos']
-        self.rfid = data['rf_id']
-        self._agent = None
-        self._blocked = False
-        self.connected_nodes_map = defaultdict(lambda: None)
+        self._agent_id: int = None
+        self._blocked: bool = False
+        self.connected_nodes_map: Dict[str, 'Node'] = defaultdict(lambda: None)
         self.connected_nodes: List['Node'] = list()
         self.lock = threading.RLock()
 
@@ -45,11 +44,11 @@ class Node:
 
     @property
     def agent(self):
-        return self._agent
+        return self._agent_id
 
     @agent.setter
     def agent(self, agent_id):
-        self._agent = agent_id
+        self._agent_id = agent_id
 
     @property
     def blocked(self):
